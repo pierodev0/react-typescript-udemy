@@ -1,9 +1,7 @@
-import MenuItem from './components/MenuItem';
-import OrderContents from './components/OrderContents';
-import OrderTotals from './components/OrderTotals';
-import TipPercentageForm from './components/TipPercentageForm';
+import { MenuItem, OrderContents, OrderTotals, TipPercentageForm } from './components';
 import { menuItems } from './data/db';
 import useOrder from './hooks/useOrder';
+
 function App() {
   const { orders, addItem, deleteItem, setTip, tip, onPlaceOrder } = useOrder();
   return (
@@ -49,6 +47,7 @@ function App() {
             </div>
           )}
         </div>
+        
       </main>
     </>
   );
